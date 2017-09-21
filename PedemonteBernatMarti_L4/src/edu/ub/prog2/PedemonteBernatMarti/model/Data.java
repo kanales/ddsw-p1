@@ -64,7 +64,7 @@ public class Data implements Serializable{
      * Default constructor for Data, initializes all the attributes.
      */
     public Data(){
-        this.pubRep = new PublicRepository();
+        //this.pubRep = new PublicRepository();
         this.users = new ArrayList<> ();
         this.privRep = new ArrayList<> ();
         this.currentUser = -1;

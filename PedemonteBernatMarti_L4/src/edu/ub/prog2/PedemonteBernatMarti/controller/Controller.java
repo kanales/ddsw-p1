@@ -366,17 +366,12 @@ public class Controller implements InController{
      */
     @Override
     public void playPrivateRepositoy() throws AppException {
-        try {
-            this.openWindowPlayer();
-            this.data.playPrivateRepository();
-            this.canPause = true;
-            this.canStop = true;
-            this.canSkip = true;
-            this.canResume = false;
-        } catch (AppException e) {
-            this.closeWindowPlayer();
-            throw e;
-        }
+        this.openWindowPlayer();
+        this.data.playPrivateRepository();
+        this.canPause = true;
+        this.canStop = true;
+        this.canSkip = true;
+        this.canResume = false;
     }
 
     /**
